@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#e8bcb7",
+          "on-surface": "#131b2e",
+          "primary-fixed-dim": "#ffb4ab",
+          "surface-container-lowest": "#ffffff",
+          "surface-container": "#eaedff",
+          "tertiary-container": "#008740",
+          "on-primary-container": "#fffbff",
+          "secondary-fixed-dim": "#a9c7ff",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed-variant": "#005225",
+          "primary": "#bb0013",
+          "on-secondary": "#ffffff",
+          "outline": "#936e6a",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#00468c",
+          "background": "#faf8ff",
+          "on-error-container": "#93000a",
+          "surface-variant": "#dae2fd",
+          "on-surface-variant": "#5e3f3c",
+          "secondary": "#245eaa",
+          "surface-dim": "#d2d9f4",
+          "primary-container": "#e71520",
+          "inverse-surface": "#283044",
+          "inverse-primary": "#ffb4ab",
+          "surface-tint": "#c00014",
+          "tertiary": "#006b32",
+          "error": "#ba1a1a",
+          "surface-bright": "#faf8ff",
+          "on-tertiary-fixed": "#00210b",
+          "on-tertiary-container": "#f7fff3",
+          "on-secondary-container": "#003f7e",
+          "on-background": "#131b2e",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed": "#001b3d",
+          "tertiary-fixed-dim": "#5adf82",
+          "surface": "#faf8ff",
+          "tertiary-fixed": "#78fc9c",
+          "surface-container-low": "#f2f3ff",
+          "secondary-container": "#7aacfd",
+          "surface-container-highest": "#dae2fd",
+          "on-primary-fixed": "#410002",
+          "primary-fixed": "#ffdad6",
+          "inverse-on-surface": "#eef0ff",
+          "on-error": "#ffffff",
+          "on-primary": "#ffffff",
+          "on-primary-fixed-variant": "#93000d",
+          "secondary-fixed": "#d6e3ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "gutter-lg": "1.5rem",
+          "gutter-sm": "0.5rem",
+          "margin": "1rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "0.75rem",
+          "margin-tablet": "1.5rem",
+          "space-lg": "1.5rem",
+          "gutter": "1rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "label-lg": ["IBM Plex Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "body-md": ["IBM Plex Sans"],
+          "label-md": ["IBM Plex Sans"],
+          "body-sm": ["IBM Plex Sans"],
+          "thermal-mono": ["IBM Plex Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "display-currency": ["Plus Jakarta Sans"],
+          "label-sm": ["IBM Plex Sans"],
+          "body-lg": ["IBM Plex Sans"],
+          "headline-md": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "headline-xl": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "thermal-mono": ["13px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "display-currency": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="Pertamina SPBU Print Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_up7az9vmCqyZUxI2HiIUexMKYg4E4nfljKB_zcvhARpMXuyJkCY3AKMJXYsTmLj2iq6nrrSeXkM2Jsyt9v7nGivCmuzH1kTYTS_kMPX_UfpmOat-TLZTsbDqt1aad3KOyrHWikbFBhikoeZ0ehMrQ6EpH2lWlImnk3ZQ7dcY2_mR3HEhFvY9IypPz4b2AKpkWiWvtG1Fw51Ky8eWV9BUWfsZsJ8m2vya7L-M8FteKhIarMZcNsPg"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">Pertamina SPBU POS</span><span class="px-space-xs py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase">58mm</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Riwayat Struk</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-container-high"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="material-symbols-outlined text-secondary text-[16px]">bluetooth</span><span class="font-thermal-mono text-[11px] text-on-surface font-medium hidden sm:inline">RPP-02N Connected</span><span class="font-thermal-mono text-[11px] text-on-surface font-medium sm:hidden">RPP-02N</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-24 px-margin-mobile flex flex-col"><div class="flex flex-col w-full pb-6 gap-space-md">
+<!-- Status Bar & Shift Context Strip -->
+<div class="w-full bg-surface-container rounded-xl p-space-sm shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-primary text-on-primary font-headline-sm text-[13px]">
+<span class="material-symbols-outlined text-[16px]">local_gas_station</span>
+</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-none">SPBU 54.612.55 Waru</p>
+<p class="font-headline-sm text-headline-sm text-on-surface leading-tight">Pos Pulau 2 (Nozzle 3-6)</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-tertiary shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase">Shift Aktif</span>
+</div>
+</div>
+<!-- Operational Metric Tiles (Summary) -->
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- Struk Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Struk</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">receipt</span>
+</div>
+<div class="mt-2">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">142</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant ml-0.5">lbr</span>
+</div>
+<p class="font-body-sm text-[10px] text-tertiary mt-1 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+        100% OK
+      </p>
+</div>
+<!-- Omset Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Omset</span>
+<span class="material-symbols-outlined text-[16px] text-primary">payments</span>
+</div>
+<div class="mt-2">
+<span class="font-label-sm text-[11px] font-bold text-primary block leading-none">Rp</span>
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">8,42M</span>
+</div>
+<p class="font-body-sm text-[10px] text-on-surface-variant mt-1 truncate">8.420.000</p>
+</div>
+<!-- Volume Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">BBM</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span>
+</div>
+<div class="mt-2">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">685,4</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant ml-0.5">L</span>
+</div>
+<p class="font-body-sm text-[10px] text-on-surface-variant mt-1 truncate">Total Liter</p>
+</div>
+</div>
+<!-- Search & Filter Area -->
+<div class="flex flex-col gap-space-xs">
+<!-- Search Bar with Quick Keypad trigger -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl pl-10 pr-24 py-2.5 shadow-sm outline-none placeholder:text-on-surface-variant/60 uppercase" id="searchInput" placeholder="Cari Plat (misal: W 416 RH) atau No Struk..." type="text"/>
+<button aria-label="Bersihkan pencarian" class="hidden absolute right-10 top-1/2 -translate-y-1/2 text-on-surface-variant p-1 rounded-full hover:bg-surface-container" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-bold">NOPOL</span>
+</div>
+</div>
+<!-- Shift Tabs -->
+<div class="grid grid-cols-3 gap-1 bg-surface-container p-1 rounded-xl">
+<button class="shift-tab py-1.5 px-2 rounded-lg text-center font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface">
+        Shift 1 <span class="font-thermal-mono text-[10px] opacity-75">06-14</span>
+</button>
+<button class="shift-tab active-shift py-1.5 px-2 rounded-lg text-center font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm font-bold flex items-center justify-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+        Shift 2 <span class="font-thermal-mono text-[10px] opacity-80">14-22</span>
+</button>
+<button class="shift-tab py-1.5 px-2 rounded-lg text-center font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface">
+        Shift 3 <span class="font-thermal-mono text-[10px] opacity-75">22-06</span>
+</button>
+</div>
+<!-- Fuel Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1 no-scrollbar">
+<button class="fuel-pill active-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm flex items-center gap-1" data-fuel="all">
+<span>Semua BBM</span>
+</button>
+<button class="fuel-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm flex items-center gap-1.5" data-fuel="pertalite">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Pertalite</span>
+</button>
+<button class="fuel-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm flex items-center gap-1.5" data-fuel="pertamax">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Pertamax</span>
+</button>
+<button class="fuel-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm flex items-center gap-1.5" data-fuel="pertamax-turbo">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Pertamax Turbo</span>
+</button>
+<button class="fuel-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm flex items-center gap-1.5" data-fuel="dex">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-fixed-variant"></span>
+<span>Pertamina Dex</span>
+</button>
+</div>
+</div>
+<!-- Section Header with Real-Time Indicator -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Daftar Transaksi</h2>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full" id="transCountBadge">4 Struk Terakhir</span>
+</div>
+<button class="text-secondary flex items-center gap-1 font-label-sm text-label-sm hover:underline" id="refreshBtn">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Segarkan</span>
+</button>
+</div>
+<!-- Receipt Cards Feed -->
+<div class="flex flex-col gap-space-sm" id="receiptList">
+<!-- Card 1 (Matched with physical receipt in inspiration photo: W 416 RH, 15.13L, Pertamax Rp 130.118) -->
+<article class="receipt-item bg-surface-container-lowest rounded-xl shadow-sm p-3.5 flex flex-col gap-2.5 transition-all" data-fuel="pertamax" data-nopol="W 416 RH" data-trx="SPBU-20180321-042">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">local_gas_station</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide">W 416 RH</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Tercetak</span>
+</div>
+<p class="font-thermal-mono text-body-sm text-on-surface-variant">#SPBU-20180321-042 • Selang 4</p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-display-currency text-headline-md text-primary font-bold">Rp 130.118</div>
+<span class="font-thermal-mono text-[11px] text-on-surface-variant">15:37:23 WIB</span>
+</div>
+</div>
+<!-- Metered Specification Row -->
+<div class="bg-surface-container-low rounded-lg p-2 grid grid-cols-3 gap-2 text-center">
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Produk</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Pertamax</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Volume</span>
+<span class="font-thermal-mono text-label-md text-on-surface font-bold">15,13 L</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Tarif/L</span>
+<span class="font-thermal-mono text-label-md text-on-surface">Rp 8.600</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center justify-between pt-1 gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-colors" onclick="previewThermalReceipt('SPBU-20180321-042', 'W 416 RH', 'Pertamax', '15,13', '8.600', '130.118', '4', '15:37:23')">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span>Lihat Struk 58mm</span>
+</button>
+<button class="py-2 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="triggerDirectPrint('SPBU-20180321-042', 'W 416 RH')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak Ulang</span>
+</button>
+</div>
+</article>
+<!-- Card 2: L 1829 XZ - Pertalite -->
+<article class="receipt-item bg-surface-container-lowest rounded-xl shadow-sm p-3.5 flex flex-col gap-2.5 transition-all" data-fuel="pertalite" data-nopol="L 1829 XZ" data-trx="SPBU-20180321-041">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">two_wheeler</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide">L 1829 XZ</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Tercetak</span>
+</div>
+<p class="font-thermal-mono text-body-sm text-on-surface-variant">#SPBU-20180321-041 • Selang 2</p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-display-currency text-headline-md text-on-surface font-bold">Rp 200.000</div>
+<span class="font-thermal-mono text-[11px] text-on-surface-variant">15:31:10 WIB</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 grid grid-cols-3 gap-2 text-center">
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Produk</span>
+<span class="font-label-md text-label-md text-tertiary font-bold">Pertalite</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Volume</span>
+<span class="font-thermal-mono text-label-md text-on-surface font-bold">20,00 L</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Tarif/L</span>
+<span class="font-thermal-mono text-label-md text-on-surface">Rp 10.000</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-colors" onclick="previewThermalReceipt('SPBU-20180321-041', 'L 1829 XZ', 'Pertalite', '20,00', '10.000', '200.000', '2', '15:31:10')">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span>Lihat Struk 58mm</span>
+</button>
+<button class="py-2 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="triggerDirectPrint('SPBU-20180321-041', 'L 1829 XZ')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak Ulang</span>
+</button>
+</div>
+</article>
+<!-- Card 3: B 9021 TAA - Pertamina Dex -->
+<article class="receipt-item bg-surface-container-lowest rounded-xl shadow-sm p-3.5 flex flex-col gap-2.5 transition-all" data-fuel="dex" data-nopol="B 9021 TAA" data-trx="SPBU-20180321-040">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-on-tertiary-fixed-variant/10 flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">directions_car</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide">B 9021 TAA</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Tercetak</span>
+</div>
+<p class="font-thermal-mono text-body-sm text-on-surface-variant">#SPBU-20180321-040 • Selang 6</p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-display-currency text-headline-md text-on-surface font-bold">Rp 461.500</div>
+<span class="font-thermal-mono text-[11px] text-on-surface-variant">15:22:45 WIB</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 grid grid-cols-3 gap-2 text-center">
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Produk</span>
+<span class="font-label-md text-label-md text-on-tertiary-fixed-variant font-bold">Pertamina Dex</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Volume</span>
+<span class="font-thermal-mono text-label-md text-on-surface font-bold">35,50 L</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Tarif/L</span>
+<span class="font-thermal-mono text-label-md text-on-surface">Rp 13.000</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-colors" onclick="previewThermalReceipt('SPBU-20180321-040', 'B 9021 TAA', 'Pertamina Dex', '35,50', '13.000', '461.500', '6', '15:22:45')">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span>Lihat Struk 58mm</span>
+</button>
+<button class="py-2 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="triggerDirectPrint('SPBU-20180321-040', 'B 9021 TAA')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak Ulang</span>
+</button>
+</div>
+</article>
+<!-- Card 4: N 3341 KJ - Pertamax Turbo -->
+<article class="receipt-item bg-surface-container-lowest rounded-xl shadow-sm p-3.5 flex flex-col gap-2.5 transition-all" data-fuel="pertamax-turbo" data-nopol="N 3341 KJ" data-trx="SPBU-20180321-039">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">sports_motorsports</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide">N 3341 KJ</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Tercetak</span>
+</div>
+<p class="font-thermal-mono text-body-sm text-on-surface-variant">#SPBU-20180321-039 • Selang 3</p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-display-currency text-headline-md text-on-surface font-bold">Rp 144.000</div>
+<span class="font-thermal-mono text-[11px] text-on-surface-variant">15:15:02 WIB</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 grid grid-cols-3 gap-2 text-center">
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Produk</span>
+<span class="font-label-md text-label-md text-primary font-bold">Pertamax Turbo</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Volume</span>
+<span class="font-thermal-mono text-label-md text-on-surface font-bold">10,00 L</span>
+</div>
+<div>
+<span class="block font-label-sm text-[10px] text-on-surface-variant uppercase">Tarif/L</span>
+<span class="font-thermal-mono text-label-md text-on-surface">Rp 14.400</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-colors" onclick="previewThermalReceipt('SPBU-20180321-039', 'N 3341 KJ', 'Pertamax Turbo', '10,00', '14.400', '144.000', '3', '15:15:02')">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span>Lihat Struk 58mm</span>
+</button>
+<button class="py-2 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="triggerDirectPrint('SPBU-20180321-039', 'N 3341 KJ')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak Ulang</span>
+</button>
+</div>
+</article>
+<!-- Empty Search State (hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-10 px-4 text-center bg-surface-container-lowest rounded-xl shadow-sm" id="emptyState">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center mb-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Struk Tidak Ditemukan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">Periksa kembali nomor plat atau kode transaksi di shift ini.</p>
+</div>
+</div>
+<!-- End of Shift Report Action Bar (Tactile Pinned CTA) -->
+<div class="mt-2 pt-2 flex flex-col gap-2">
+<button class="w-full min-h-[52px] bg-secondary hover:bg-on-secondary-container text-on-secondary rounded-xl px-4 py-3 shadow-md flex items-center justify-between active:scale-[0.99] transition-all" id="btnEndOfShift">
+<div class="flex items-center gap-2.5 text-left">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+<div>
+<span class="font-headline-sm text-headline-sm leading-tight block">Rekap Shift 2 (Tutup Buku)</span>
+<span class="font-thermal-mono text-label-sm text-secondary-fixed opacity-90">Cetak Ringkasan 58mm • 142 Transaksi</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[22px]">chevron_right</span>
+</button>
+</div>
+<!-- Thermal 58mm Live Drawer/Modal (Hidden initially) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex-col justify-end" id="receiptModal">
+<div class="w-full max-w-md mx-auto bg-surface-container-lowest rounded-t-2xl shadow-xl flex flex-col max-h-[795px] overflow-hidden animate-in slide-in-from-bottom duration-200">
+<!-- Modal Header -->
+<div class="p-3 bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">print</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Pratinjau Kertas 58mm</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface" id="closeModalBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Thermal Simulated Receipt Slip (Paper Look) -->
+<div class="p-4 overflow-y-auto bg-surface-container-low flex justify-center">
+<div class="w-[280px] bg-white p-4 text-[#111111] font-thermal-mono shadow-md text-[12px] leading-tight flex flex-col rounded-sm">
+<!-- Jagged simulated tear top -->
+<div class="flex justify-between items-center mb-3">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-black text-primary">
+<span class="material-symbols-outlined text-[18px] text-primary">local_gas_station</span>
+              PERTAMINA
+            </div>
+<div class="text-[9px] font-bold px-1 py-0.5 rounded bg-surface-container-highest text-on-surface">
+              PASTI PAS!
+            </div>
+</div>
+<div class="text-center pb-2">
+<p class="font-bold text-[12px]">SPBU 54.612.55</p>
+<p class="text-[10px]">Jl. Raya Tropodo 9A</p>
+<p class="text-[10px]">Waru - Sidoarjo</p>
+<p class="text-[10px]">Telp. 031-8667744</p>
+<p class="text-[10px] mt-1 pt-1" id="receiptDateTime">Minggu, 21 Maret 2018 15:37:23</p>
+</div>
+<div class="w-full my-1.5 h-0.5 bg-surface-container-highest"></div>
+<div class="flex flex-col gap-1 text-[11px]">
+<div class="flex justify-between">
+<span>Nomor Printer</span>
+<span>: 1 (RPP-02N)</span>
+</div>
+<div class="flex justify-between">
+<span>Nomor Selang</span>
+<span id="receiptHose">: 4</span>
+</div>
+<div class="flex justify-between">
+<span>Jenis BBM</span>
+<span class="font-bold" id="receiptFuel">: Pertamax</span>
+</div>
+<div class="flex justify-between">
+<span>Liter</span>
+<span class="font-bold" id="receiptLiter">: 15,13</span>
+</div>
+<div class="flex justify-between">
+<span>Harga/liter</span>
+<span id="receiptPrice">: Rp. 8.600</span>
+</div>
+</div>
+<div class="w-full my-2 h-0.5 bg-surface-container-highest"></div>
+<div class="flex justify-between items-baseline my-1">
+<span class="font-headline-sm text-[16px] font-extrabold">Total</span>
+<span class="font-headline-sm text-[18px] font-black" id="receiptTotal">: Rp. 130.118</span>
+</div>
+<div class="w-full my-2 h-0.5 bg-surface-container-highest"></div>
+<div class="flex justify-between text-[11px]">
+<span>Nopol</span>
+<span class="font-bold" id="receiptPlate">: W416RH</span>
+</div>
+<div class="text-center mt-3 pt-2">
+<p class="font-bold text-[10px] tracking-wide">TERIMA KASIH DAN SELAMAT JALAN</p>
+<p class="text-[9px] text-on-surface-variant mt-0.5">Layanan Konsumen Pertamina: 135</p>
+</div>
+<!-- Bottom barcode mock -->
+<div class="mt-3 flex flex-col items-center gap-1 opacity-70">
+<div class="h-6 w-44 bg-surface-container-highest flex items-center justify-around px-2">
+<span class="w-1 h-5 bg-on-surface"></span>
+<span class="w-0.5 h-5 bg-on-surface"></span>
+<span class="w-2 h-5 bg-on-surface"></span>
+<span class="w-1 h-5 bg-on-surface"></span>
+<span class="w-0.5 h-5 bg-on-surface"></span>
+<span class="w-1.5 h-5 bg-on-surface"></span>
+<span class="w-0.5 h-5 bg-on-surface"></span>
+<span class="w-2 h-5 bg-on-surface"></span>
+</div>
+<span class="text-[9px]" id="receiptBarcodeText">SPBU-20180321-042</span>
+</div>
+</div>
+</div>
+<!-- Thermal Action Sheet Footer -->
+<div class="p-3 bg-surface-container-lowest flex gap-2">
+<button class="flex-1 min-h-[48px] bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm rounded-xl flex items-center justify-center gap-2 shadow-sm active:scale-[0.98]" id="modalReprintBtn">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Cetak ke Printer</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast for Printer Feedback -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2 pointer-events-none opacity-0 transition-opacity duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">task_alt</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Struk berhasil dikirim ke printer RPP-02N</span>
+</div>
+</div>
+<script>
+  // Toast Helper
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    if (toast && msg) {
+      msg.textContent = message;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2500);
+    }
+  }
+
+  // Quick Direct Print
+  window.triggerDirectPrint = function(trxId, plate) {
+    showToast(`Mencetak ulang struk ${plate} (${trxId})...`);
+    if (navigator.vibrate) navigator.vibrate(40);
+  };
+
+  // Preview Thermal Receipt Modal
+  window.previewThermalReceipt = function(trxId, nopol, fuel, liter, price, total, hose, time) {
+    const modal = document.getElementById('receiptModal');
+    document.getElementById('receiptPlate').textContent = ': ' + nopol.replace(/\s+/g, '');
+    document.getElementById('receiptFuel').textContent = ': ' + fuel;
+    document.getElementById('receiptLiter').textContent = ': ' + liter;
+    document.getElementById('receiptPrice').textContent = ': Rp. ' + price;
+    document.getElementById('receiptTotal').textContent = ': Rp. ' + total;
+    document.getElementById('receiptHose').textContent = ': ' + hose;
+    document.getElementById('receiptDateTime').textContent = `Minggu, 21 Maret 2018 ${time}`;
+    document.getElementById('receiptBarcodeText').textContent = trxId;
+    
+    // Wire up modal reprint button
+    const reprintBtn = document.getElementById('modalReprintBtn');
+    reprintBtn.onclick = function() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      showToast(`Mencetak struk ${nopol} ke RPP-02N (58mm)...`);
+    };
+
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  };
+
+  // Close modal
+  document.getElementById('closeModalBtn')?.addEventListener('click', function() {
+    const modal = document.getElementById('receiptModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  });
+
+  // End of shift action
+  document.getElementById('btnEndOfShift')?.addEventListener('click', function() {
+    showToast('Mencetak Rekap Tutup Shift 2 (142 Transaksi)...');
+  });
+
+  // Refresh action
+  document.getElementById('refreshBtn')?.addEventListener('click', function() {
+    showToast('Sinkronisasi data dispenser & struk terbaru...');
+  });
+
+  // Search Filter Handling
+  const searchInput = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('clearSearchBtn');
+  const items = document.querySelectorAll('.receipt-item');
+  const emptyState = document.getElementById('emptyState');
+  const transCountBadge = document.getElementById('transCountBadge');
+
+  function filterItems() {
+    const query = searchInput.value.trim().toLowerCase();
+    const activePill = document.querySelector('.fuel-pill.active-pill');
+    const selectedFuel = activePill ? activePill.dataset.fuel : 'all';
+
+    if (query.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+
+    let visibleCount = 0;
+
+    items.forEach(item => {
+      const nopol = (item.dataset.nopol || '').toLowerCase();
+      const trx = (item.dataset.trx || '').toLowerCase();
+      const fuel = item.dataset.fuel || '';
+
+      const matchesSearch = query === '' || nopol.includes(query) || trx.includes(query);
+      const matchesFuel = selectedFuel === 'all' || fuel === selectedFuel;
+
+      if (matchesSearch && matchesFuel) {
+        item.classList.remove('hidden');
+        item.classList.add('flex');
+        visibleCount++;
+      } else {
+        item.classList.remove('flex');
+        item.classList.add('hidden');
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.remove('flex');
+      emptyState.classList.add('hidden');
+    }
+
+    if (transCountBadge) {
+      transCountBadge.textContent = `${visibleCount} Struk Ditampilkan`;
+    }
+  }
+
+  searchInput?.addEventListener('input', filterItems);
+  clearBtn?.addEventListener('click', function() {
+    searchInput.value = '';
+    filterItems();
+    searchInput.focus();
+  });
+
+  // Fuel Pill Filters
+  const fuelPills = document.querySelectorAll('.fuel-pill');
+  fuelPills.forEach(pill => {
+    pill.addEventListener('click', function() {
+      fuelPills.forEach(p => {
+        p.classList.remove('active-pill', 'bg-primary', 'text-on-primary');
+        p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      });
+      this.classList.add('active-pill', 'bg-primary', 'text-on-primary');
+      this.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+      filterItems();
+    });
+  });
+
+  // Shift Tabs Click Interaction
+  const shiftTabs = document.querySelectorAll('.shift-tab');
+  shiftTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      shiftTabs.forEach(t => {
+        t.classList.remove('active-shift', 'bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+        t.classList.add('text-on-surface-variant');
+      });
+      this.classList.add('active-shift', 'bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+      this.classList.remove('text-on-surface-variant');
+      showToast(`Beralih ke riwayat ${this.textContent.trim().split(' ')[0]} ${this.textContent.trim().split(' ')[1]}`);
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="grid grid-cols-4 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="buat-struk" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Buat Struk</span></a><a class="flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="preview-dan-cetak" href="#"><span class="material-symbols-outlined text-[24px]">print</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Preview &amp; Cetak</span></a><a aria-current="page" class="flex flex-col items-center justify-center h-full min-h-[44px] transition-colors text-primary font-bold" data-path="riwayat-struk" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Riwayat</span></a><a class="flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="pengaturan-printer-dan-spbu" href="#"><span class="material-symbols-outlined text-[24px]">tune</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Pengaturan</span></a></div></nav></body></html>

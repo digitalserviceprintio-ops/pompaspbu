@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#e8bcb7",
+          "on-surface": "#131b2e",
+          "primary-fixed-dim": "#ffb4ab",
+          "surface-container-lowest": "#ffffff",
+          "surface-container": "#eaedff",
+          "tertiary-container": "#008740",
+          "on-primary-container": "#fffbff",
+          "secondary-fixed-dim": "#a9c7ff",
+          "surface-container-high": "#e2e7ff",
+          "on-tertiary-fixed-variant": "#005225",
+          "primary": "#bb0013",
+          "on-secondary": "#ffffff",
+          "outline": "#936e6a",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#00468c",
+          "background": "#faf8ff",
+          "on-error-container": "#93000a",
+          "surface-variant": "#dae2fd",
+          "on-surface-variant": "#5e3f3c",
+          "secondary": "#245eaa",
+          "surface-dim": "#d2d9f4",
+          "primary-container": "#e71520",
+          "inverse-surface": "#283044",
+          "inverse-primary": "#ffb4ab",
+          "surface-tint": "#c00014",
+          "tertiary": "#006b32",
+          "error": "#ba1a1a",
+          "surface-bright": "#faf8ff",
+          "on-tertiary-fixed": "#00210b",
+          "on-tertiary-container": "#f7fff3",
+          "on-secondary-container": "#003f7e",
+          "on-background": "#131b2e",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed": "#001b3d",
+          "tertiary-fixed-dim": "#5adf82",
+          "surface": "#faf8ff",
+          "tertiary-fixed": "#78fc9c",
+          "surface-container-low": "#f2f3ff",
+          "secondary-container": "#7aacfd",
+          "surface-container-highest": "#dae2fd",
+          "on-primary-fixed": "#410002",
+          "primary-fixed": "#ffdad6",
+          "inverse-on-surface": "#eef0ff",
+          "on-error": "#ffffff",
+          "on-primary": "#ffffff",
+          "on-primary-fixed-variant": "#93000d",
+          "secondary-fixed": "#d6e3ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "gutter-lg": "1.5rem",
+          "gutter-sm": "0.5rem",
+          "margin": "1rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "0.75rem",
+          "margin-tablet": "1.5rem",
+          "space-lg": "1.5rem",
+          "gutter": "1rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "label-lg": ["IBM Plex Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "body-md": ["IBM Plex Sans"],
+          "label-md": ["IBM Plex Sans"],
+          "body-sm": ["IBM Plex Sans"],
+          "thermal-mono": ["IBM Plex Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "display-currency": ["Plus Jakarta Sans"],
+          "label-sm": ["IBM Plex Sans"],
+          "body-lg": ["IBM Plex Sans"],
+          "headline-md": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "headline-xl": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "thermal-mono": ["13px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "display-currency": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="Pertamina SPBU Print Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_up7az9vmCqyZUxI2HiIUexMKYg4E4nfljKB_zcvhARpMXuyJkCY3AKMJXYsTmLj2iq6nrrSeXkM2Jsyt9v7nGivCmuzH1kTYTS_kMPX_UfpmOat-TLZTsbDqt1aad3KOyrHWikbFBhikoeZ0ehMrQ6EpH2lWlImnk3ZQ7dcY2_mR3HEhFvY9IypPz4b2AKpkWiWvtG1Fw51Ky8eWV9BUWfsZsJ8m2vya7L-M8FteKhIarMZcNsPg"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">Pertamina SPBU POS</span><span class="px-space-xs py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase">58mm</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Preview Dan Cetak</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-container-high"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="material-symbols-outlined text-secondary text-[16px]">bluetooth</span><span class="font-thermal-mono text-[11px] text-on-surface font-medium hidden sm:inline">RPP-02N Connected</span><span class="font-thermal-mono text-[11px] text-on-surface font-medium sm:hidden">RPP-02N</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-24 px-margin-mobile flex flex-col"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Top Hardware Telemetry Pill -->
+<div class="w-full bg-surface-container rounded-xl p-3 flex items-center justify-between shadow-sm">
+<div class="flex items-center space-x-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">RPP02N Thermal (ESC/POS)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Baterai 85% • Kertas Siap • BT Siap</span>
+</div>
+</div>
+<div class="flex items-center space-x-1 flex-shrink-0">
+<button class="px-2.5 py-1 bg-surface-container-highest text-secondary hover:bg-secondary-container hover:text-on-secondary-container rounded-lg font-label-sm text-label-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">sensors</span>
+<span>Tes</span>
+</button>
+</div>
+</div>
+<!-- Thermal Paper Setting Controls Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-3 space-y-3 shadow-sm">
+<!-- Size segmented switcher -->
+<div class="flex items-center justify-between gap-2">
+<div class="grid grid-cols-2 p-1 bg-surface-container rounded-lg flex-1">
+<button class="py-1.5 text-center rounded-md font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm font-bold flex items-center justify-center gap-1" id="btn-size-58">
+<span class="material-symbols-outlined text-[15px]">straighten</span>
+<span>58mm Roll</span>
+</button>
+<button class="py-1.5 text-center rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1" id="btn-size-80">
+<span class="material-symbols-outlined text-[15px]">aspect_ratio</span>
+<span>80mm Kios</span>
+</button>
+</div>
+<!-- Quick Zoom control -->
+<div class="flex items-center bg-surface-container rounded-lg p-1 space-x-1">
+<button class="w-8 h-7 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded active:bg-surface-container-highest" id="btn-zoom-out">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-thermal-mono text-label-sm text-on-surface px-1 font-bold" id="zoom-level-text">100%</span>
+<button class="w-8 h-7 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded active:bg-surface-container-highest" id="btn-zoom-in">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Density Profile Switcher -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">contrast</span> Kepekatan Thermal:
+      </span>
+<div class="flex items-center space-x-1.5">
+<button class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant font-medium">Eco</button>
+<button class="px-2.5 py-0.5 rounded text-label-sm font-label-sm bg-inverse-surface text-inverse-on-surface font-bold shadow-xs">Pasti Pas (Bold)</button>
+<button class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant font-medium">Maksimal</button>
+</div>
+</div>
+</div>
+<!-- Realistis Thermal Paper Canvas Preview -->
+<div class="w-full flex justify-center py-2 px-1">
+<div class="w-[330px] max-w-full relative filter drop-shadow-md transition-all duration-300" id="receipt-container">
+<!-- Top Perforated Serrated Zig-zag Cut Edge -->
+<div class="w-full h-3 overflow-hidden flex leading-none text-surface-container-lowest">
+<svg class="w-full h-full fill-white" preserveaspectratio="none" viewbox="0 0 120 12">
+<path d="M0 12 L4 0 L8 12 L12 0 L16 12 L20 0 L24 12 L28 0 L32 12 L36 0 L40 12 L44 0 L48 12 L52 0 L56 12 L60 0 L64 12 L68 0 L72 12 L76 0 L80 12 L84 0 L88 12 L92 0 L96 12 L100 0 L104 12 L108 0 L112 12 L116 0 L120 12 Z"></path>
+</svg>
+</div>
+<!-- Main Thermal Slip Canvas -->
+<div class="bg-white px-5 py-4 text-black select-none font-thermal-mono text-[13px] leading-[1.35] tracking-tight antialiased shadow-xs">
+<!-- Header Logo & Pasti Pas Badge Area -->
+<div class="flex items-start justify-between pb-3">
+<!-- Pertamina Monochromatic POS Graphic -->
+<div class="flex items-center space-x-2">
+<svg class="w-8 h-7 text-black fill-current" viewbox="0 0 100 80">
+<polygon points="5,25 35,0 70,0 40,25"></polygon>
+<polygon points="0,55 30,30 65,30 35,55"></polygon>
+<polygon points="25,80 55,55 90,55 60,80"></polygon>
+</svg>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-wider leading-none">PERTAMINA</span>
+<span class="font-thermal-mono text-[9px] tracking-widest mt-0.5">RETAIL INDONESIA</span>
+</div>
+</div>
+<!-- Stamped "PASTI PAS!" Monochromatic Stamp -->
+<div class="p-1 border border-black border-dashed flex flex-col items-center justify-center transform rotate-2">
+<div class="flex items-center gap-0.5">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24">
+<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+</svg>
+<span class="font-headline-sm text-[10px] font-black uppercase tracking-tighter">PASTI PAS!</span>
+</div>
+<span class="text-[7px] uppercase font-bold tracking-widest">TERKALIBRASI</span>
+</div>
+</div>
+<!-- Station Address Block -->
+<div class="space-y-0.5 text-left text-neutral-900 font-medium">
+<p class="font-bold tracking-normal text-[13px]">SPBU.54.612.55</p>
+<p>Jl.Raya Tropodo 9A</p>
+<p>Waru - Sidoarjo</p>
+<p>Telp.031-8667744</p>
+<div class="flex justify-between items-center pt-1 font-mono text-[12px]">
+<span>Minggu, 21 Maret 2018</span>
+<span class="font-bold">15:37:23</span>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="my-2 border-b border-black border-dashed"></div>
+<!-- Dispenser Breakdown -->
+<div class="space-y-1 font-mono">
+<div class="flex justify-between">
+<span>Nomor Printer</span>
+<span class="font-bold">: 1</span>
+</div>
+<div class="flex justify-between">
+<span>Nomor Selang</span>
+<span class="font-bold">: 4</span>
+</div>
+<div class="flex justify-between">
+<span>Jenis BBM</span>
+<span class="font-bold uppercase tracking-tight">: PERTAMAX (RON 92)</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Liter</span>
+<span class="font-bold">: 15,13 L</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Harga/liter</span>
+<span>: Rp 8.600</span>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="my-2.5 border-b border-black border-dashed"></div>
+<!-- Big Bold Thermal Total Line (Accurate to Physical Spec) -->
+<div class="flex justify-between items-baseline py-1">
+<span class="font-headline-sm text-headline-sm font-black tracking-tight uppercase">TOTAL</span>
+<div class="text-right">
+<span class="font-headline-xl-mobile text-headline-xl-mobile font-black tracking-tight leading-none">: Rp 130.118</span>
+</div>
+</div>
+<!-- Payment Meta & Vehicle Plate -->
+<div class="my-2 border-b border-black border-dashed"></div>
+<div class="space-y-1 font-mono">
+<div class="flex justify-between items-center">
+<span>Nopol</span>
+<span class="font-bold text-[14px] bg-neutral-100 px-1.5 py-0.2 rounded">: W 416 RH</span>
+</div>
+<div class="flex justify-between text-[11px] text-neutral-800">
+<span>Metode Bayar</span>
+<span>: TUNAI (CASH)</span>
+</div>
+<div class="flex justify-between text-[11px] text-neutral-800">
+<span>Uang Diterima</span>
+<span>: Rp 150.000</span>
+</div>
+<div class="flex justify-between text-[11px] text-neutral-800">
+<span>Kembalian</span>
+<span>: Rp 19.882</span>
+</div>
+</div>
+<!-- QR Code / Barcode Thermal Section -->
+<div class="my-3 flex flex-col items-center justify-center space-y-1">
+<!-- Monochromatic Scalable Thermal Barcode SVG -->
+<svg class="h-9 w-48 text-black fill-current" preserveaspectratio="none" viewbox="0 0 160 30">
+<rect height="30" width="3" x="0" y="0"></rect>
+<rect height="30" width="2" x="5" y="0"></rect>
+<rect height="30" width="5" x="10" y="0"></rect>
+<rect height="30" width="2" x="18" y="0"></rect>
+<rect height="30" width="4" x="23" y="0"></rect>
+<rect height="30" width="1" x="30" y="0"></rect>
+<rect height="30" width="6" x="34" y="0"></rect>
+<rect height="30" width="2" x="43" y="0"></rect>
+<rect height="30" width="5" x="48" y="0"></rect>
+<rect height="30" width="2" x="56" y="0"></rect>
+<rect height="30" width="7" x="62" y="0"></rect>
+<rect height="30" width="3" x="72" y="0"></rect>
+<rect height="30" width="4" x="78" y="0"></rect>
+<rect height="30" width="2" x="85" y="0"></rect>
+<rect height="30" width="6" x="90" y="0"></rect>
+<rect height="30" width="2" x="99" y="0"></rect>
+<rect height="30" width="4" x="104" y="0"></rect>
+<rect height="30" width="5" x="111" y="0"></rect>
+<rect height="30" width="2" x="119" y="0"></rect>
+<rect height="30" width="6" x="124" y="0"></rect>
+<rect height="30" width="2" x="133" y="0"></rect>
+<rect height="30" width="4" x="138" y="0"></rect>
+<rect height="30" width="5" x="145" y="0"></rect>
+<rect height="30" width="3" x="154" y="0"></rect>
+</svg>
+<span class="font-thermal-mono text-[9px] tracking-widest text-neutral-800">TRX-5461255-20180321-041</span>
+</div>
+<!-- Closing Footer Phrase -->
+<div class="pt-2 text-center space-y-0.5">
+<p class="font-headline-sm text-[12px] font-extrabold tracking-wider uppercase">TERIMA KASIH DAN SELAMAT JALAN</p>
+<p class="text-[10px] text-neutral-600">Pertamina Call Center: 135</p>
+</div>
+</div>
+<!-- Bottom Serrated Zig-zag Cut Edge -->
+<div class="w-full h-3 overflow-hidden flex leading-none text-surface-container-lowest">
+<svg class="w-full h-full fill-white rotate-180" preserveaspectratio="none" viewbox="0 0 120 12">
+<path d="M0 12 L4 0 L8 12 L12 0 L16 12 L20 0 L24 12 L28 0 L32 12 L36 0 L40 12 L44 0 L48 12 L52 0 L56 12 L60 0 L64 12 L68 0 L72 12 L76 0 L80 12 L84 0 L88 12 L92 0 L96 12 L100 0 L104 12 L108 0 L112 12 L116 0 L120 12 Z"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Operational Summary Chips -->
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface-container-low rounded-xl p-2.5 flex items-center space-x-2.5 shadow-xs">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_gas_station</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Nozzle Pompa</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Dispenser 4</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2.5 flex items-center space-x-2.5 shadow-xs">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Pola Transaksi</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Rp 130.118</span>
+</div>
+</div>
+</div>
+<!-- Copy Multiplier & Print Controls -->
+<div class="bg-surface-container-lowest rounded-xl p-3 space-y-3 shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">content_copy</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Salinan Cetak (Copy)</span>
+</div>
+<!-- Incrementer -->
+<div class="flex items-center bg-surface-container rounded-lg p-1 space-x-2">
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface flex items-center justify-center font-bold active:bg-surface-container-high transition-colors" id="btn-dec-copy">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold px-2" id="copy-count">1x</span>
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface flex items-center justify-center font-bold active:bg-surface-container-high transition-colors" id="btn-inc-copy">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Secondary Fast Action Utilities -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="h-11 px-3 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-xl font-label-md text-label-md flex items-center justify-center space-x-1.5 transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Edit Data BBM</span>
+</button>
+<button class="h-11 px-3 bg-surface-container text-secondary hover:bg-surface-container-high rounded-xl font-label-md text-label-md flex items-center justify-center space-x-1.5 transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Kirim Gambar/PDF</span>
+</button>
+</div>
+<!-- Master Action: High-Tactile Print Trigger -->
+<button class="w-full min-h-[54px] bg-primary hover:bg-primary-container text-on-primary rounded-xl font-headline-sm text-headline-sm font-bold flex items-center justify-center space-x-2 shadow-lg active:scale-[0.98] transition-all" id="btn-print-action" type="button">
+<span class="material-symbols-outlined text-[24px]">print</span>
+<span id="label-print-button">CETAK STRUK SEKARANG (1 Salinan)</span>
+</button>
+</div>
+<!-- Notification Banner Overlay (Hidden by Default) -->
+<div class="fixed top-20 left-4 right-4 bg-inverse-surface text-inverse-on-surface p-3.5 rounded-xl shadow-2xl flex items-center justify-between z-50 transform -translate-y-28 opacity-0 transition-all duration-300 pointer-events-none" id="print-toast">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">Data Terkirim ke Printer!</span>
+<span class="font-body-sm text-body-sm opacity-80">Memotong kertas thermal secara otomatis...</span>
+</div>
+</div>
+<span class="font-thermal-mono text-[11px] font-bold text-tertiary-fixed">ESC/POS OK</span>
+</div>
+</div>
+<script>
+  (function () {
+    let copyCount = 1;
+    let zoomLevel = 100;
+    
+    const countDisplay = document.getElementById('copy-count');
+    const printButtonLabel = document.getElementById('label-print-button');
+    const btnInc = document.getElementById('btn-inc-copy');
+    const btnDec = document.getElementById('btn-dec-copy');
+    const btnPrint = document.getElementById('btn-print-action');
+    const receiptContainer = document.getElementById('receipt-container');
+    const toast = document.getElementById('print-toast');
+    
+    const btnSize58 = document.getElementById('btn-size-58');
+    const btnSize80 = document.getElementById('btn-size-80');
+    const btnZoomIn = document.getElementById('btn-zoom-in');
+    const btnZoomOut = document.getElementById('btn-zoom-out');
+    const zoomText = document.getElementById('zoom-level-text');
+
+    function updateCopy(newVal) {
+      if (newVal < 1) newVal = 1;
+      if (newVal > 5) newVal = 5;
+      copyCount = newVal;
+      countDisplay.textContent = copyCount + 'x';
+      printButtonLabel.textContent = `CETAK STRUK SEKARANG (${copyCount} Salinan)`;
+    }
+
+    btnInc.addEventListener('click', () => updateCopy(copyCount + 1));
+    btnDec.addEventListener('click', () => updateCopy(copyCount - 1));
+
+    btnSize58.addEventListener('click', () => {
+      btnSize58.className = 'py-1.5 text-center rounded-md font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm font-bold flex items-center justify-center gap-1';
+      btnSize80.className = 'py-1.5 text-center rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1';
+      receiptContainer.style.maxWidth = '330px';
+    });
+
+    btnSize80.addEventListener('click', () => {
+      btnSize80.className = 'py-1.5 text-center rounded-md font-label-md text-label-md transition-all bg-secondary text-on-secondary shadow-sm font-bold flex items-center justify-center gap-1';
+      btnSize58.className = 'py-1.5 text-center rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1';
+      receiptContainer.style.maxWidth = '100%';
+    });
+
+    btnZoomIn.addEventListener('click', () => {
+      if (zoomLevel < 120) {
+        zoomLevel += 10;
+        applyZoom();
+      }
+    });
+
+    btnZoomOut.addEventListener('click', () => {
+      if (zoomLevel > 80) {
+        zoomLevel -= 10;
+        applyZoom();
+      }
+    });
+
+    function applyZoom() {
+      zoomText.textContent = zoomLevel + '%';
+      receiptContainer.style.transform = `scale(${zoomLevel / 100})`;
+      receiptContainer.style.transformOrigin = 'top center';
+    }
+
+    btnPrint.addEventListener('click', () => {
+      toast.classList.remove('-translate-y-28', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      
+      setTimeout(() => {
+        toast.classList.add('-translate-y-28', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2600);
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="grid grid-cols-4 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="buat-struk" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Buat Struk</span></a><a aria-current="page" class="flex flex-col items-center justify-center h-full min-h-[44px] transition-colors text-primary font-bold" data-path="preview-dan-cetak" href="#"><span class="material-symbols-outlined text-[24px]">print</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Preview &amp; Cetak</span></a><a class="flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="riwayat-struk" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Riwayat</span></a><a class="flex flex-col items-center justify-center h-full min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="pengaturan-printer-dan-spbu" href="#"><span class="material-symbols-outlined text-[24px]">tune</span><span class="font-label-sm text-[10px] tracking-tight mt-0.5 text-center leading-tight truncate w-full px-0.5">Pengaturan</span></a></div></nav></body></html>

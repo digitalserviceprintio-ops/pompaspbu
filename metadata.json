@@ -1,0 +1,6 @@
+{
+  "name": "Pertamina SPBU POS",
+  "description": "Sistem Kasir SPBU Pertamina & Thermal Receipt Engine 58mm/80mm",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
